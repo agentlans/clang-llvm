@@ -10,15 +10,15 @@ This Docker image offers a lightweight platform for C/C++ code analysis tools us
 
 ## Usage
 
-Create a `Dockerfile` in your project directory:
+Create a `Dockerfile` in your project directory using this image as a base:
 
-  ```FROM your-username/clang17-llmv17:latest```
+  `FROM agentlans/clang-llvm:latest`
 
-Replace `your-username` with your Docker Hub username or repository location. Use `docker build` to create your image:
+Replace `your-project-name` with your desired project name. Use `docker build` to create your image:
 
   `docker build -t your-project-name .`
 
-Replace `your-project-name` with your desired project name. Use `docker run` to start your container:
+Use `docker run` to start your container:
 
   `docker run -it --rm your-project-name`
 
